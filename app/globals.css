@@ -24,3 +24,65 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.task-list-app h1 {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+.task-list-app {
+ margin: 50px auto; /*上下は余白空けて、左右はautoで設定して中央寄せ*/
+ max-width: 300px; /*最大幅を設定*/
+ width: 90%; /*スマホでも見切れないように幅を設定*/
+ padding: 20px;
+ background-color: #7fff00;
+ border-radius: 8px;
+ box-shadow: 3px 4px;
+}
+.task-list {
+  display: flex;
+  flex-direction: column;/*縦方向に要素を並べる*/
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 10px;
+}
+.todo-input{
+ width: 100%;
+ border:1px solid #0a0a0a;
+ border-radius: 4px;
+ padding: 10px;
+ box-sizing: border-box;
+ margin-bottom: 10px;
+ margin-right: 10px;/*右横にスペースを作る*/
+ flex-grow: 1;
+
+}
+.todo-form {
+  width: 100%;
+  display: flex;/*入力ボタンを横並びにする*/
+  align-items: center;
+  margin-bottom: 10px;
+}
+.todo-button {
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #0a0a0a;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 1rem;
+  padding: 3px;
+}
+.todo-button:hover {
+  background-color:darkgray;
+}
+.todo-item {
+  margin-bottom: 8px;
+  display: flex;/*要素を横並びのフレックスコンテナにする*/
+  justify-content: space-between;
+  align-items: center;/*タスク文章の行の高さの中央に配置される*/
+  padding: 3px;
+
+}
+.task-checkbox {
+  margin-right: 8px;
+}
