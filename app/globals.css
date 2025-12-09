@@ -34,7 +34,7 @@ body {
  max-width: 300px; /*最大幅を設定*/
  width: 90%; /*スマホでも見切れないように幅を設定*/
  padding: 20px;
- background-color: #7fff00;
+ background-color: #63ca51;
  border-radius: 8px;
  box-shadow: 3px 4px;
 }
@@ -45,6 +45,7 @@ body {
   margin: 0;
   list-style: none;
   margin-top: 10px;
+
 }
 .todo-input{
  width: 100%;
